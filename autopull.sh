@@ -2,7 +2,7 @@
 
 set -e
 
-cd repo
+cd dorfbook
 
 git fetch
 
@@ -25,7 +25,7 @@ cd ..
 mkdir -p run
 
 kill `pidof dorfbook` || true
-cp -R repo/bin run
+cp -R dorfbook/bin run
 
 nohup run/dorfbook &
 
